@@ -1,0 +1,74 @@
+                               Interface of LPTIO
+                               ~~~~~~~~~~~~~~~~~~~
+I. Files
+~~~~~~~~
+  hardware.txt		this file
+  lptio.pro		KiCAD project file
+  lptio.sch		schematic draw file
+  lptio.cmp		component list
+  lptio.stf		component/module list
+  lptio.net		netlist
+  lptio.brd		printed circuit board file
+  schema.ps		schematic draw (postscript)
+  comp.ps		component side of this board (postscript)
+  silk.ps		silk screen of this board (postscript)
+  sold.ps		solder side of this board (postscript)
+
+II. General information
+~~~~~~~~~~~~~~~~~~~~~~~
+  Ups: 5V DC
+  Il:  220 mA
+
+III. Component list
+~~~~~~~~~~~~~~~~~~~
+  +----------------------------------------------+
+  | position | name                | type/value  |
+  +----------+---------------------+-------------+
+  | C1-5     | capacitor           | 33 nF       |
+  | C6       | polarized capacitor | 100 uF 16V  |
+  | Cs1      | connector           | DB25 Female |
+  | Cs2      | connector           | 3.5 mm jack |
+  | Cs3-5    | connector           | DB9 Female  |
+  | D1       | diode               | 1N4001      |
+  | D2       | LED                 | 3 mm green  |
+  | D3       | LED                 | 3 mm yellow |
+  | J1-4     | switch              |             |
+  | R1-2     | resistor            | 330 ohm     |
+  | R3-11    | resistor            | 1 kohm      |
+  | U1       | IC                  | 74LS245     |
+  | U2       | IC                  | 74LS374     |
+  | U3       | IC                  | 74LS138     |
+  | U4       | IC                  | 74LS688     |
+  | U5       | IC                  | 74LS157     |
+  +----------------------------------------------+
+
+IV. External connectors
+~~~~~~~~~~~~~~~~~~~~~~~
+  'LPT' connector         '-S0..7' connector      'DI0-7/DO0-7' connectors
+  +-----------------+	  +-----------------+	  +-----------------+
+  | pin | function  |	  | pin | function  |	  | pin | function  |
+  |-----+-----------|	  |-----+-----------|	  |-----+-----------|
+  |  1  |  -STROBE  |	  |  1	| -S0       |	  |  1	| D0        |
+  |  2  |  DO       |	  |  2	| -S2       |	  |  2	| D2        |
+  |  3  |  D1       |	  |  3	| -S4       |	  |  3	| D4        |
+  |  4  |  D2       |	  |  4	| -S6       |	  |  4	| D6        |
+  |  5  |  D3       |	  |  5	| GND       |	  |  5	| GND       |
+  |  6  |  D4       |	  |  6	| -S1       |	  |  6	| D1        |
+  |  7  |  D5       |	  |  7	| -S3       |	  |  7	| D3        |
+  |  8  |  D6       |	  |  8	| -S5       |	  |  8	| D5        |
+  |  9  |  D7       |	  |  9	| -S7       |	  |  9	| D7        |
+  | 10  |  -ACK     |	  +-----------------+	  +-----------------+
+  | 11  |  BUSY     |
+  | 12  |  PE       |
+  | 13  |  SLCT     |
+  | 14  |  -AUTOFD  |
+  | 15  |  -ERROR   |
+  | 16  |  -INIT    |
+  | 17  |  -SLCT IN |
+  |18-25|  GND      |
+  +-----------------+
+
+V. Cable between interface and PC
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  1->1; 2->2; ... 16->16.
+  Ground: 18-25 -> 18-25.
