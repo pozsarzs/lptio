@@ -1,0 +1,4 @@
+hardware/documents/* linguist-documentation=true
+*.brd linguist-detectable=true
+*.pro linguist-detectable=false
+*.sch linguist-detectable=true
