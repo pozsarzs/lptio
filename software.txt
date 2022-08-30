@@ -1,0 +1,21 @@
+Eight channels I/O port for LPT
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+I. File info
+------------
+  software/handler.pas	Handler program (DOS)
+  software/lptio.pas	Turbo Pascal unit
+
+II. Routines are in lptio.tpu
+-----------------------------
+  procedure SetPXPort(PortNum: byte);				set LPT port
+  function GetPXResult: boolean;				get I/O result
+  procedure PXWrite(EqID: byte; Select: byte; OutData: byte);	write to eq.
+  function PXRead(EqID, Select: byte): byte;			read from eq.
+  function GetPXEqID: byte;					get eq. ID.
+
+III. Other information
+----------------------
+  - This is a freeware software.
+  - Homepage: http://www.pozsarzs.hu/lptio/lptio.html
+  - Contact: Pozsar Zsolt <info@pozsarzs.hu>

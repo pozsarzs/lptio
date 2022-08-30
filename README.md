@@ -10,7 +10,7 @@ GitHub: <https://github.com/pozsarzs/lptio>
  - version:            v0.1
  - language:           en
  - licence:            Freeware
- - user interface:     GUI
+ - user interface:     TUI
 
 **External libraries in package**
 

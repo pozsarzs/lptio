@@ -1,18 +1,17 @@
-                               Interface of LPTIO
-                               ~~~~~~~~~~~~~~~~~~~
+Extended I/O interface for LPT port
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 I. Files
 ~~~~~~~~
-  hardware.txt		this file
-  lptio.pro		KiCAD project file
-  lptio.sch		schematic draw file
-  lptio.cmp		component list
-  lptio.stf		component/module list
-  lptio.net		netlist
-  lptio.brd		printed circuit board file
-  schema.ps		schematic draw (postscript)
-  comp.ps		component side of this board (postscript)
-  silk.ps		silk screen of this board (postscript)
-  sold.ps		solder side of this board (postscript)
+  hardware/cad_files/lptio.pro		KiCAD project file
+  hardware/cad_files/lptio.sch		schematic draw file
+  hardware/cad_files/lptio.cmp		component list
+  hardware/cad_files/lptio.stf		component/module list
+  hardware/cad_files/lptio.net		netlist
+  hardware/cad_files/lptio.brd		printed circuit board file
+  hardware/cad_files/schema.ps		schematic draw (postscript)
+  hardware/cad_files/comp.ps		component side of this board (postscript)
+  hardware/cad_files/silk.ps		silk screen of this board (postscript)
+  hardware/cad_files/sold.ps		solder side of this board (postscript)
 
 II. General information
 ~~~~~~~~~~~~~~~~~~~~~~~
