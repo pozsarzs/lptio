@@ -6,7 +6,7 @@ GitHub: <https://github.com/pozsarzs/lptio>
 **Software**
 
  - architecture:       i386
- - operation system:   FreeDOS
+ - operation system:   DOS, Linux
  - version:            v0.1
  - language:           en
  - licence:            Freeware
