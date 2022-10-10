@@ -1,5 +1,5 @@
 { +--------------------------------------------------------------------------+ }
-{ | Extended I/O interface for LPT port                                      | }
+{ | Extended I/O interface for LPT port                          DOS VERSION | }
 { | Copyright (C) 2010 Pozsar Zsolt <info@pozsarzs.hu>                       | }
 { | lptio.pas                                                                | }
 { | handler routines                                                         | }
